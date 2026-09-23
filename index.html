@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Elite Perfume — оригинальная восточная парфюмерия</title>
+<meta name="description" content="Elite Perfume — Lattafa, Maison Alhambra, Al Haramain, REEF, Riiffs и Ahmed. Доставка по всей России.">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap');
+:root{--black:#090909;--ink:#181614;--gold:#c69a52;--gold2:#e2c27d;--cream:#f6f1e8;--white:#fff;--muted:#777067;--line:#ded6c8}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:#faf9f6;font-family:"DM Sans",sans-serif}a{text-decoration:none;color:inherit}
+.top{background:var(--black);color:#e8d7b7;text-align:center;padding:9px 14px;font-size:11px;letter-spacing:.14em}
+header{height:82px;padding:0 5%;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);position:sticky;top:0;background:#faf9f6ed;backdrop-filter:blur(12px);z-index:20}
+.logo{display:flex;align-items:center;gap:11px}.logo img{width:49px;height:49px;object-fit:contain;border-radius:50%}.logo-text{font:600 16px "Playfair Display";letter-spacing:.13em}.logo-text small{display:block;font:10px "DM Sans";letter-spacing:.35em;color:var(--gold)}
+nav{display:flex;gap:28px;font-size:13px}nav a:hover{color:var(--gold)}
+.cart{border:1px solid var(--ink);background:none;padding:10px 15px;border-radius:25px;cursor:pointer}
+.hero{min-height:690px;padding:70px 8%;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;background:radial-gradient(circle at 80% 50%,#33291b 0,#11100e 37%,#070707 70%);color:white;overflow:hidden}
+.hero-copy{max-width:680px}.ey{font-size:10px;letter-spacing:.27em;color:var(--gold2);font-weight:600}.hero h1{font:500 clamp(50px,7vw,90px)/.92 "Playfair Display";margin:18px 0 28px}.hero h1 i{font-weight:500;color:#e1c17d}.hero p{color:#c7c0b5;line-height:1.8;max-width:590px}.actions{display:flex;gap:10px;margin-top:30px;flex-wrap:wrap}.btn{display:inline-flex;justify-content:center;align-items:center;padding:14px 22px;border:1px solid var(--gold);font-size:13px;cursor:pointer}.gold{background:var(--gold);color:#100d08;border-color:var(--gold)}.outline{color:white;border-color:#8c7a5c}
+.hero-art{min-height:500px;position:relative;display:grid;place-items:center}.hero-art:before{content:"";position:absolute;width:450px;height:450px;border:1px solid #a77b39;border-radius:50%;box-shadow:0 0 100px #9b6d2b33}
+.hero-art:after{content:"";position:absolute;width:390px;height:390px;border:1px solid #6c512b;border-radius:50%}
+.hero-bottle{position:relative;z-index:2;filter:drop-shadow(0 25px 35px #000)}.hb-cap{width:92px;height:72px;margin:auto;background:linear-gradient(90deg,#7d5b25,#e6c37a,#805d27);border-radius:8px 8px 3px 3px}.hb-body{width:185px;height:280px;border:1px solid #c79a4d;border-radius:16px 16px 28px 28px;background:linear-gradient(120deg,#080808,#252015,#090909);display:grid;place-items:center;text-align:center}.hb-body b{font:30px "Playfair Display";color:#e0bd72}.hb-body span{display:block;font-size:9px;letter-spacing:.35em;color:#bfa36e;margin-top:8px}
+.trust{display:grid;grid-template-columns:repeat(4,1fr);border-bottom:1px solid var(--line);background:white}.trust div{padding:25px 28px;border-right:1px solid var(--line)}.trust div:last-child{border:0}.trust strong,.trust span{display:block}.trust strong{font-size:13px;margin-bottom:6px}.trust span{font-size:12px;color:var(--muted)}
+section{padding:85px 7%}.head{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:35px}h2{font:500 48px "Playfair Display";margin:9px 0}.filters{display:flex;gap:7px;flex-wrap:wrap;justify-content:flex-end}.filter{padding:9px 13px;background:none;border:1px solid var(--line);font-size:12px;cursor:pointer}.filter.active{background:var(--black);color:#fff;border-color:var(--black)}
+.products{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}.product{background:#f0e9dc;border:1px solid #e5ddce}.pic{height:285px;display:grid;place-items:center;text-align:center;background:radial-gradient(circle at 50% 55%,#e0c68e 0,#b9995f 10%,#ddd0b6 42%,#eee9df 100%);position:relative;overflow:hidden}.pic:before{content:"";width:105px;height:165px;border:1px solid #806638;border-radius:10px 10px 20px 20px;background:linear-gradient(120deg,#15130f,#4b3a21,#111);box-shadow:0 18px 25px #0003}.pic:after{content:"";position:absolute;width:44px;height:38px;background:#201b13;border-radius:5px;top:61px}.pic label{position:absolute;z-index:1;bottom:28px;font:18px "Playfair Display";color:#fff;text-shadow:0 1px 5px #000}.info{padding:19px;background:#fff}.brand{font-size:9px;letter-spacing:.2em;color:var(--gold);font-weight:600}.info h3{font:22px "Playfair Display";margin:8px 0}.meta{display:flex;gap:7px;flex-wrap:wrap;margin:8px 0 10px}.tag{display:inline-block;padding:5px 8px;border:1px solid var(--line);font-size:10px;letter-spacing:.04em;background:#faf9f6}.notes{font-size:11px;color:#5e584f;line-height:1.55;min-height:84px}.notes b{color:#24211d}.desc{font-size:12px;color:var(--muted);min-height:36px;line-height:1.5}.price{font-size:14px;font-weight:600;margin-top:7px}.add{width:100%;margin-top:14px;padding:12px;background:var(--black);color:#fff;border:0;cursor:pointer}
+.black{background:#0b0b0a;color:#fff}.black .ey{color:var(--gold2)}.brandgrid{display:grid;grid-template-columns:repeat(3,1fr);margin-top:32px}.brandgrid div{padding:27px 0;border-top:1px solid #fff1;font:24px "Playfair Display"}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);margin-top:35px}.step{background:#faf9f6;padding:30px;min-height:220px}.step b{color:var(--gold)}.step h3{font:25px "Playfair Display"}.step p{font-size:13px;line-height:1.7;color:var(--muted)}
+.contact{margin:0 7% 70px;padding:55px 6%;background:#e8decd;display:flex;justify-content:space-between;align-items:center;gap:30px}.contact h2{font-size:40px}.contact p{color:#655f55}.buttons{display:flex;gap:10px;white-space:nowrap}
+footer{background:#0b0b0a;color:#aaa;padding:40px 7%;display:flex;justify-content:space-between;gap:20px;font-size:12px}.footer-logo{color:white;font:18px "Playfair Display"}
+.modal{display:none;position:fixed;inset:0;z-index:30}.modal.show{display:block}.shade{position:absolute;inset:0;background:#0009}.panel{position:absolute;right:0;top:0;height:100%;width:min(490px,100%);background:#faf9f6;padding:35px;overflow:auto}.x{position:absolute;right:18px;top:10px;border:0;background:none;font-size:31px;cursor:pointer}.row{display:flex;gap:12px;padding:15px 0;border-bottom:1px solid var(--line)}.grow{flex:1}.row h4{font:18px "Playfair Display";margin:0 0 5px}.row small{color:var(--muted)}.remove{border:0;background:none;cursor:pointer}.total{display:flex;justify-content:space-between;padding:22px 0;font-size:18px}input,select{width:100%;padding:14px;border:1px solid var(--line);background:white;font:inherit;margin-bottom:10px}.full{width:100%}.note{font-size:10px;color:var(--muted);line-height:1.5}
+@media(max-width:950px){nav{display:none}.hero{grid-template-columns:1fr}.hero-art{min-height:430px}.trust{grid-template-columns:1fr 1fr}.products{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}.head{display:block}.filters{justify-content:flex-start;margin-top:20px}.contact{display:block}.buttons{margin-top:22px}}
+@media(max-width:560px){.products{grid-template-columns:1fr}.trust{grid-template-columns:1fr}.trust div{border-right:0;border-bottom:1px solid var(--line)}.brandgrid{grid-template-columns:1fr 1fr}.hero{padding:55px 6%}.hero h1{font-size:54px}.contact{margin:0 5% 50px}.footer{display:block}}
+</style>
+
+<meta name="robots" content="index,follow">
+<meta name="author" content="Elite Perfume">
+<meta name="theme-color" content="#090909">
+<link rel="canonical" href="https://eliteperfume.ru/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Elite Perfume — восточная парфюмерия">
+<meta property="og:description" content="Lattafa, Maison Alhambra, Al Haramain, REEF, Riiffs и Ahmed. Доставка по России.">
+<meta property="og:url" content="https://eliteperfume.ru/">
+<meta property="og:site_name" content="Elite Perfume">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Store",
+  "name":"Elite Perfume",
+  "url":"https://eliteperfume.ru/",
+  "description":"Интернет-магазин восточной парфюмерии.",
+  "telephone":"+79997142010",
+  "areaServed":"RU",
+  "sameAs":["https://t.me/lattafarusia"]
+}
+</script>
+
+</head>
+<body>
+<div class="top">ELITE PERFUME · ОРИГИНАЛЬНАЯ ПАРФЮМЕРИЯ · ДОСТАВКА ПО ВСЕЙ РОССИИ</div>
+<header>
+<a class="logo" href="#home"><img src="logo.png" alt="Elite Perfume"><span class="logo-text">ELITE PERFUME<small>DUBAI · PERFUME</small></span></a>
+<nav><a href="#catalog">Каталог</a><a href="#brands">Бренды</a><a href="#delivery">Доставка</a><a href="#contacts">Контакты</a></nav>
+<button class="cart" onclick="openCart()">Корзина <b id="count">0</b></button>
+</header>
+
+<section class="hero" id="home">
+<div class="hero-copy"><div class="ey">ELITE PERFUME</div><h1>Ароматы<br><i>восточной роскоши.</i></h1><p>Lattafa, Maison Alhambra, Al Haramain, REEF, Riiffs и Ahmed. Подберём аромат под ваш стиль и отправим заказ в любой город России.</p><div class="actions"><a class="btn gold" href="#catalog">Перейти в каталог</a><a class="btn outline" id="heroWa" href="#">WhatsApp</a></div></div>
+<div class="hero-art"><div class="hero-bottle"><div class="hb-cap"></div><div class="hb-body"><div><b>EP</b><span>ELITE PERFUME</span></div></div></div></div>
+</section>
+
+<div class="trust"><div><strong>Оригинальная продукция</strong><span>Заводская упаковка и проверка товара</span></div><div><strong>По всей России</strong><span>Почта России · СДЭК · Яндекс и др.</span></div><div><strong>Удобная оплата</strong><span>Онлайн · карта · перевод</span></div><div><strong>Помощь с выбором</strong><span>Подберём аромат под вас</span></div></div>
+
+<section id="catalog">
+<div class="head"><div><div class="ey">SHOP COLLECTION</div><h2>Каталог</h2></div><div class="filters">
+<button class="filter active" data-b="all">Все</button><button class="filter" data-b="Lattafa">Lattafa</button><button class="filter" data-b="Alhambra">Alhambra</button><button class="filter" data-b="Al Haramain">Al Haramain</button><button class="filter" data-b="REEF">REEF</button><button class="filter" data-b="Riiffs">Riiffs</button><button class="filter" data-b="Ahmed">Ahmed</button><button class="filter" data-g="Женский">Женские</button><button class="filter" data-g="Мужской">Мужские</button><button class="filter" data-g="Унисекс">Унисекс</button>
+</div></div>
+<div class="products" id="products"></div>
+</section>
+
+<section class="black" id="brands"><div class="ey">BRANDS</div><h2>Наши бренды</h2><div class="brandgrid"><div>LATTAFA</div><div>MAISON ALHAMBRA</div><div>AL HARAMAIN</div><div>REEF</div><div>RIIFFS</div><div>AHMED</div></div></section>
+
+<section id="delivery"><div class="ey">DELIVERY & PAYMENT</div><h2>Доставка и оплата</h2><div class="steps">
+<div class="step"><b>01</b><h3>Выберите аромат</h3><p>Добавьте нужные позиции в корзину или напишите менеджеру.</p></div>
+<div class="step"><b>02</b><h3>Оформите заказ</h3><p>Имя, телефон и город — менеджер подтвердит наличие.</p></div>
+<div class="step"><b>03</b><h3>Оплатите</h3><p>Онлайн-оплата, перевод на карту или другой согласованный способ.</p></div>
+<div class="step"><b>04</b><h3>Получите</h3><p>Отправка по России: СДЭК, Почта России, Яндекс Доставка и другие варианты.</p></div>
+</div></section>
+
+<section class="contact" id="contacts"><div><div class="ey">CONTACT</div><h2>Поможем выбрать аромат</h2><p>Напишите в WhatsApp или Telegram — ответим и подберём варианты.</p></div><div class="buttons"><a class="btn gold" id="wa" href="#">WhatsApp</a><a class="btn" id="tg" href="#">Telegram</a></div></section>
+
+<footer><div class="footer-logo">ELITE PERFUME</div><div>© 2026 Elite Perfume · Доставка по всей России</div><div>WhatsApp: +7 999 714-20-10 · Telegram: @lattafarusia</div></footer>
+
+<div class="modal" id="modal"><div class="shade" onclick="closeCart()"></div><div class="panel"><button class="x" onclick="closeCart()">×</button><div class="ey">YOUR ORDER</div><h2>Корзина</h2><div id="items"></div><div class="total"><span>Итого</span><strong id="total">Цена уточняется</strong></div>
+<form id="order"><input name="name" required placeholder="Ваше имя"><input name="phone" required placeholder="Телефон"><input name="city" required placeholder="Город"><select name="pay" required><option value="">Способ оплаты</option><option>Онлайн-оплата</option><option>Перевод на карту</option><option>Другой способ — согласовать</option></select><button class="btn gold full">Отправить заказ</button><p class="note">Цены пока не указаны. После отправки заявки менеджер подтвердит наличие и стоимость. Реквизиты для оплаты можно сообщить после подтверждения заказа.</p></form>
+</div></div>
+
+<script>
+const P=[
+{id:1,b:"Lattafa",n:"Yara Tous",g:"Женский",d:"Манго · кокос · маракуйя · ваниль",t:"Кокос, манго, маракуйя",h:"Жасмин, гелиотроп, цветок апельсина",base:"Кашмеран, ваниль, мускус",url:"https://lattafa.com/product/yara-tous/"},
+{id:2,b:"Lattafa",n:"Yara",g:"Женский",d:"Мандарин · орхидея · ваниль · мускус",t:"Мандарин, гелиотроп, орхидея",h:"Тропические и гурманские ноты",base:"Ваниль, сандал, мускус",url:"https://lattafa.com/product/yara/"},
+{id:3,b:"Lattafa",n:"Khamrah",g:"Унисекс",d:"Бергамот · корица · финики · ваниль",t:"Бергамот, корица, мускатный орех",h:"Финики, ландыш, пралине, тубероза",base:"Жареные бобы тонка, бензоин, мирра, аквилалавуд, ваниль, амбровое дерево",url:"https://lattafa.com/product/khamrah/"},
+{id:4,b:"Lattafa",n:"Khamrah Qahwa",g:"Унисекс",d:"Корица · кардамон · кофе · ваниль",t:"Имбирь, корица, кардамон",h:"Пралине, засахаренные фрукты, белые цветы",base:"Кофе Arabica, бобы тонка, мускус, бензоин, ваниль",url:"https://lattafa.com/product/khamrah-qahwa/"},
+{id:5,b:"Lattafa",n:"Asad",g:"Мужской",d:"Чёрный перец · табак · кофе · амбра",t:"Чёрный перец, ананас, табак",h:"Кофе, ирис, пачули",base:"Амбра, ваниль, сухие древесные ноты, бензоин, лабданум",url:"https://lattafa.com/product/asad/"},
+{id:6,b:"Alhambra",n:"Tobacco Touch",g:"Унисекс",d:"Табак · ваниль · какао · сухофрукты",t:"Табак, пряные ноты",h:"Табак, ваниль, бобы тонка, какао",base:"Сухофрукты, древесные ноты",url:"https://www.maisonparfum.nl/collections/maison-alhambra"},
+{id:7,b:"Alhambra",n:"Jean Lowe Fraiche",g:"Унисекс",d:"Лабданум · пачули · сандал · амбра",t:"Лабданум, пачули, сандал",h:"Дыня, жасмин, имбирь, мускатный орех",base:"Кедр, амбра",url:"https://www.maisonparfum.nl/collections/maison-alhambra"},
+{id:8,b:"Al Haramain",n:"Amber Oud Gold Edition",g:"Унисекс",d:"Бергамот · зелёные ноты · ананас · ваниль",t:"Бергамот, зелёные ноты",h:"Дыня, ананас, гурманские ноты, амбра",base:"Древесные ноты, ваниль, мускус",url:"https://us.alharamainperfumes.com/en/amber-oud-gold-edition-120-ml.html"},
+{id:9,b:"Al Haramain",n:"Junoon",g:"Женский",d:"Пудровый · ирис · роза · ваниль",t:"Пудровые ноты, роза, иланг-иланг, жасмин",h:"Ирис, роза, бобы тонка, жасмин",base:"Гелиотроп, мускус, ваниль",url:"https://shop.alharamainperfumes.com/eu/"},
+{id:10,b:"REEF",n:"Парфюмерия REEF",g:"Унисекс",d:"Арабская парфюмерия — ассортимент уточняется",t:"Уточняется",h:"Уточняется",base:"Уточняется",url:"#"},
+{id:11,b:"Riiffs",n:"Riiffs",g:"Унисекс",d:"Восточная парфюмерия — ассортимент уточняется",t:"Уточняется",h:"Уточняется",base:"Уточняется",url:"#"},
+{id:12,b:"Ahmed",n:"Ahmed Al Maghribi",g:"Унисекс",d:"Восточная парфюмерия — ассортимент уточняется",t:"Уточняется",h:"Уточняется",base:"Уточняется",url:"#"}
+]
+let cart=JSON.parse(localStorage.getItem("eliteCart2")||"[]");
+const money=n=>new Intl.NumberFormat("ru-RU").format(n)+" ₽";
+function render(filter="all", gender="all"){
+ const list=P.filter(x=>(filter==="all"||x.b===filter)&&(gender==="all"||x.g===gender));
+ products.innerHTML=list.map(x=>`
+ <article class="product">
+  <a class="pic" href="${x.url}" target="_blank" rel="noopener"><label>${x.b}<br><b>${x.n}</b></label></a>
+  <div class="info"><div class="brand">${x.b}</div><h3>${x.n}</h3><div class="meta"><span class="tag">${x.g}</span><span class="tag">100 ML</span></div><div class="notes"><b>Верх:</b> ${x.t}<br><b>Сердце:</b> ${x.h}<br><b>База:</b> ${x.base}</div><div class="price">Цена уточняется</div><button class="add" onclick="add(${x.id})">В корзину</button></div>
+ </article>`).join("");
+}
+function add(id){cart.push(id);save();openCart()}
+function save(){localStorage.setItem("eliteCart2",JSON.stringify(cart));renderCart()}
+function renderCart(){
+ count.textContent=cart.length;let c={};cart.forEach(id=>c[id]=(c[id]||0)+1);
+ items.innerHTML=Object.entries(c).map(([id,q])=>{let x=P.find(p=>p.id==id);return `<div class="row"><div class="grow"><h4>${x.n}</h4><small>${x.b} · ${q} шт.</small></div><button class="remove" onclick="removeItem(${x.id})">×</button></div>`}).join("") || '<p style="color:#746f67">Корзина пуста.</p>';
+ total.textContent=cart.length?"Цена уточняется":"0 ₽";
+}
+function removeItem(id){let i=cart.indexOf(id);if(i>-1)cart.splice(i,1);save()}
+function openCart(){modal.classList.add("show");renderCart()}function closeCart(){modal.classList.remove("show")}
+let activeBrand="all", activeGender="all";
+document.querySelectorAll(".filter").forEach(b=>b.onclick=()=>{
+ document.querySelectorAll(".filter").forEach(x=>x.classList.remove("active"));b.classList.add("active");
+ if(b.dataset.b!==undefined) activeBrand=b.dataset.b;
+ if(b.dataset.g!==undefined) activeGender=b.dataset.g;
+ if(b.dataset.b!==undefined) activeGender="all";
+ if(b.dataset.g!==undefined) activeBrand="all";
+ render(activeBrand,activeGender);
+});
+const WHATSAPP="79997142010", TELEGRAM="lattafarusia", msg=encodeURIComponent("Здравствуйте! Хочу заказать парфюмерию в Elite Perfume.");
+document.getElementById("wa").href=`https://wa.me/${WHATSAPP}?text=${msg}`;
+document.getElementById("heroWa").href=`https://wa.me/${WHATSAPP}?text=${msg}`;
+document.getElementById("tg").href=`https://t.me/${TELEGRAM}`;
+order.onsubmit=e=>{e.preventDefault();let f=new FormData(order);let names=cart.map(id=>{let x=P.find(p=>p.id===id);return x.b+" "+x.n}).join(", ");let m=`Новый заказ Elite Perfume%0AИмя: ${encodeURIComponent(f.get("name"))}%0AТелефон: ${encodeURIComponent(f.get("phone"))}%0AГород: ${encodeURIComponent(f.get("city"))}%0AОплата: ${encodeURIComponent(f.get("pay"))}%0AТовары: ${encodeURIComponent(names)}`;window.open(`https://wa.me/${WHATSAPP}?text=${m}`,"_blank")};
+render();renderCart();
+</script>
+</body></html>
